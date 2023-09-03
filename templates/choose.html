@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your preffered meal!</title>
+</head>
+<body>
+    <ul>
+        {% for option in options %}
+            <a href="/submit-response/{{option}}/{{name}}"><button>{{option}}</button></a>
+        {% endfor %}
+    </ul>
+</body>
+</html>
